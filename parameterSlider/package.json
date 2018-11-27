@@ -1,0 +1,19 @@
+{
+  "name": "visual",
+  "dependencies": {
+    "@types/nouislider": "^9.0.4",
+    "@types/wnumb": "^1.0.28",
+    "nouislider": "^12.1.0",
+    "powerbi-visuals-utils-dataviewutils": "1.2.0",
+    "wnumb": "^1.1.0"
+  },
+  "version": "1.0.0",
+  "main": "src/visual.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

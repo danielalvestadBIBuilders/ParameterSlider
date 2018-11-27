@@ -1,0 +1,29 @@
+{
+  "visual": {
+    "name": "parameterSlider",
+    "displayName": "ParameterSlider",
+    "guid": "parameterSlider3D662610F5A54988ADF33821592ADC7F",
+    "visualClassName": "Visual",
+    "version": "1.0.0",
+    "description": "",
+    "supportUrl": "",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "2.2.0",
+  "author": {
+    "name": "",
+    "email": ""
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "externalJS": [
+    "node_modules/powerbi-visuals-utils-dataviewutils/lib/index.js",
+    "src/nouislider.js",
+    "node_modules/wnumb/wNumb.js"
+  ],
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}

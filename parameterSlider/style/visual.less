@@ -1,0 +1,56 @@
+@import (less) "style/nouislider.css";
+
+// Height of the slider bar
+.noUi-horizontal {
+    height: 3px;
+}
+
+// The slider bar
+.noUi-target {
+    border-radius: 0px;
+    border: 0px;
+}
+
+// The handler (showing current value)
+.noUi-horizontal .noUi-handle {
+    width: 10px;
+    height: 20px;
+    left: -5px;
+    top: -10px;
+    font-size: 10px;  
+  }
+
+// Border of the slider
+.noUi-handle {
+    border-radius: 5px;
+}
+
+.noUi-handle:after {
+    left: 0px;
+}
+
+.noUi-vertical .noUi-handle:after {
+    top: 0px;
+}
+
+.noUi-handle:before,
+.noUi-handle:after {
+  left: 0px;
+}
+
+p {
+    font-size: 13px;
+    font-weight: bold;
+    em {
+        background: yellow;
+        padding: 5px;
+        
+    }
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}

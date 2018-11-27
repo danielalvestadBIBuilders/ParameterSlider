@@ -1,0 +1,66 @@
+{
+    "dataRoles": [
+        {
+            "displayName": "Values",
+            "name": "values",
+            "kind": "Grouping",
+            "description": "Databind a list of values that appear in the slider. Values must be numeric and will be automatically sorted in ascending order."
+        }
+    ],
+    "objects": {
+        "data": {
+            "displayName": "Data",
+            "properties": {
+                "defaultSelectedValue": {
+                    "displayName": "Default Selected Value",
+                    "description": "The default selected value when the report is first loaded. Set to -12000 to default to no filter.",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        },
+        "sliderStyle": {
+            "displayName": "Slider Style",
+            "properties": {
+                "barWidth": {
+                    "displayName": "Bar Width",
+                    "description": "Change the whidth of the bar",
+                    "type": {
+                        "numeric": true
+                    }
+                },
+                "handlerFontSize": {
+                    "displayName": "Handler Font Size",
+                    "description": "Change the font size of the handler",
+                    "type": {
+                        "numeric": true
+                    }
+                }
+            }
+        }
+    },
+    "dataViewMappings": [
+        {
+            "conditions": [
+                {
+                    "values": {
+                        "max": 1
+                    }
+                }
+            ],
+            "categorical": {
+                "categories": {
+                    "for": {
+                        "in": "values"
+                    },
+                    "dataReductionAlgorithm": {
+                        "top": {
+                            "count": 100000
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
